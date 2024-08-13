@@ -1,0 +1,12 @@
+.env
+
+.venv
+
+*.pyc
+
+*.db
+
+*.png
+
+__pycache__
+
