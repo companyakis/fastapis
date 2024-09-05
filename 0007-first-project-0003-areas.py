@@ -2,9 +2,11 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-AREAS = [
-    {"title": "AI", "main_lang": "Python"},
-    {"title": "Web3", "main_lang": "Rust"},
+CITIES = [
+    {"name": "Ankara", "mayor": "Mansur Yavaş", "country": "Turkiye"},
+    {"name": "İstanbul", "mayor": "Ekrem İmamoğlu", "country": "Turkiye"},
+    {"name": "İzmir", "mayor": "Cemil Tugay", "country": "Turkiye"},
+    {"name": "Adana", "mayor": "Zeydan Karalar", "country": "Turkiye"},
 ]
 
 
@@ -12,6 +14,6 @@ AREAS = [
 async def first_msg():
     return {"message": "Hi there!"}
 
-@app.get("/areas")
-async def all_areas():
-        return AREAS
+@app.get("/all-cities")
+async def ciyy_info():
+        return CITIES
